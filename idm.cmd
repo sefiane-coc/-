@@ -371,25 +371,27 @@ if not defined terminal mode 75, 28
 
 echo:
 echo:
-call :_color2 %_White% "             " %_Green% "Create By sefiane_coc"
+call :_color2 %_White% "             " %_Yellow% "Create By sefiane_coc"
+
+
 echo:            ___________________________________________________ 
 echo:
-echo:               instagram: sefiane.20
-echo:               Discord: sefiane_coc
-echo:               Github: https://github.com/sefiane-coc
+echo:             ^|  instagram: sefiane.20                        ^|
+echo:             ^|  Discord: sefiane_coc                         ^|
+echo:             ^|  Github: https://github.com/sefiane-coc       ^|
 echo:            ___________________________________________________ 
 echo:                                                               
-echo:               [1] Activate
-echo:               [2] Freeze Trial
-echo:               [3] Reset Activation / Trial
-echo:               _____________________________________________   
-echo:                                                               
-echo:               [4] Download IDM
-echo:               [5] Help
-echo:               [0] Exit
+echo:             ^|  [1] Activate                                 ^|
+echo:             ^|  [2] Freeze Trial                             ^|
+echo:             ^|  [3] Reset Activation / Trial                 ^|
+echo:            ___________________________________________________
+echo:                                                              
+echo:             ^|  [4] Download IDM                             ^|
+echo:             ^|  [5] Help                                     ^|
+echo:             ^|  [0] Exit                                     ^|
 echo:            ___________________________________________________
 echo:         
-call :_color2 %_White% "             " %_Green% "Enter a menu option in the Keyboard [1,2,3,4,5,0]"
+call :_color2 %_White% "             " %_Yellow% "Enter a menu option in the Keyboard [1,2,3,4,5,0]"
 choice /C:123450 /N
 set _erl=%errorlevel%
 
@@ -508,10 +510,10 @@ echo %line%
 echo:
 echo      Activation is not working for some users and IDM may show fake serial nag screen.
 echo:
-call :_color2 %_White% "     " %_Green% "Its recommended to use Freeze Trial option instead."
+call :_color2 %_White% "     " %_Yellow% "Its recommended to use Freeze Trial option instead."
 echo %line%
 echo:
-choice /C:19 /N /M ">    [1] Go Back [9] Activate : "
+choice /C:0Y /N /M ">    [0] Go Back [Y] Activate : "
 if !errorlevel!==1 goto :MainMenu
 cls
 )
@@ -915,5 +917,4 @@ exit /b
 
 ::========================================================================================================================================
 :: Leave empty line below
-
 
